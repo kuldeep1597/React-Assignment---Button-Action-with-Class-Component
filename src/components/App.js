@@ -5,7 +5,7 @@ class App extends Component {
     constructor(props) {
 		super(props);
 		this.state = {
-			buttonstate: false
+			buttonstate: false,
 		};
 		this.change=this.change.bind(this);
 	};
@@ -16,11 +16,12 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-				<button onClick={this.change} id="click">button</button>
+				<button id="click" onClick={this.change}>button</button>
 				{ this.buttonstate ? (
 					<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
 					
-				): <p>click again</p>}
+				): null
+				}
     		</div>
     	);
     }
