@@ -17,7 +17,7 @@ class App extends Component {
     	return(
     		<div id="main">
 				<button id="click" onClick={this.change}>button</button>
-				{ this.buttonstate ? (
+				{ this.state.buttonstate ? (
 					<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
 					
 				): null
